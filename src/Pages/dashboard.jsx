@@ -55,7 +55,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchLocationData = async (lat, lng) => {
       try {
-        const response = await axios.get('http://localhost:5001/api/auth/getLocation', {
+        const response = await axios.get('https://nh-backend-3.onrender.com/api/auth/getLocation', {
           params: { lat, lng }
         });
 

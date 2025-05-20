@@ -148,7 +148,7 @@ const Home = () => {
               <h1>Stay Safe, Stay Informed</h1>
               <p>Track incidents, stay updated, and help create a safer neighborhood.</p>
               <div className="buttons">
-                <NavLink to={isLoggedIn ? "/dashboard" : "/login"} className="btn">
+                <NavLink to= {isLoggedIn ? "/dashboard" : "/login"} className="btn">
                   Get Started
                 </NavLink>
               </div>

@@ -35,7 +35,7 @@ const Login = () => {
   const onFinish = async (values) => {
     setLoading(true);
     try {
-      const response = await axiosInstance.post(`${apiUrl}/api/auth/login`, values);
+      const response = await axiosInstance.post(`https://nh-backend-3.onrender.com/api/auth/login`, values);
 
       if (response) {
         openNotificationWithIcon("success", "Login Successful", "You have successfully logged in! 🎉");
