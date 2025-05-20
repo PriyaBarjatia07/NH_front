@@ -41,7 +41,7 @@ const navigate =useNavigate();
     setLoading(true);
     console.log("Form Values:", values);
     try {
-      const response = await axios.post("http://localhost:5001/api/auth/register", values);
+      const response = await axios.post("https://nh-backend-3.onrender.com/api/auth/register", values);
 
       if (response.data.success) {
         openNotificationWithIcon("success", "Registration Successful", "You have registered successfully! 🎉");
@@ -71,7 +71,7 @@ const navigate =useNavigate();
       console.log("Google Auth Response:", authResult);
       try {
           if (authResult.code) {
-              const res = axios.post(`http://localhost:5001/api/auth/google?code=${authResult.code}`);
+              const res = axios.post(`https://nh-backend-3.onrender.com/api/auth/google?code=${authResult.code}`);
               navigate("/dashboard");
               
               console.log("Response from backend:", res);

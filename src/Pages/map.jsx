@@ -29,7 +29,7 @@ const MapPage = () => {
     setLoading(true);
     try {
       const token = localStorage.getItem("token");
-      const response = await axios.get("http://localhost:5001/api/auth/getIncidents", {
+      const response = await axios.get("https://nh-backend-3.onrender.com/api/auth/getIncidents", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setReports(response.data);

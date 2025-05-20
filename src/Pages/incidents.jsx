@@ -13,7 +13,7 @@ const [incidents, setIncidents] = useState([]);
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5001/api/incidents/${id}`);
+      await axios.delete(`https://nh-backend-3.onrender.com/api/incidents/${id}`);
       setIncidents(incidents.filter((incident) => incident._id !== id));
       message.success("User deleted successfully");
     } catch (error) {

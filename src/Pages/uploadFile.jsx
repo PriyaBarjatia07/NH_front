@@ -15,7 +15,7 @@ function UploadFile() {
     setLoading(true);
     
     try {
-      const response = await axios.post('http://localhost:5001/api/auth/upload', formData);
+      const response = await axios.post('https://nh-backend-3.onrender.com/api/auth/upload', formData);
 
       if (response.status === 200) {
         message.success('File uploaded successfully');
