@@ -126,6 +126,8 @@
 import React from 'react';
 import { NavLink } from 'react-router';
 import "../index.css";
+import '../navbar.css';
+import '../footer.css';
 import Awareness from "../assets/images/awareness.webp";
 import Community from "../assets/images/community.webp";
 import Navbar from "../components/navbar";

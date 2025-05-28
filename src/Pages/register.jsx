@@ -18,7 +18,8 @@ import "../register.css";
 import  Navbar from "../components/navbar";
 import  Footer from "../components/footer";
 import { useNavigate } from "react-router";
-
+import '../navbar.css';
+import '../footer.css';
 const { Option } = Select;
 
 

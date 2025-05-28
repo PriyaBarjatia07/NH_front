@@ -5,6 +5,8 @@ import { Button, Checkbox, Form, Input, notification, Flex, Spin, Modal } from '
 import { NavLink } from 'react-router';
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import '../navbar.css';
+import '../footer.css';
 import axiosInstance from "../../axiosInstance";
 import LoginIllustration from '../assets/images/login.jpg';
 import '../App.css';

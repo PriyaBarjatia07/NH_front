@@ -4,7 +4,9 @@ import Facebook from "../assets/images/facebook.png";
 import Instagram from "../assets/images/instagram.png";
 import Linkedin from "../assets/images/linkedin.png";
 import Twitter from "../assets/images/twitter.png";
-import "../index.css";
+
+import '../navbar.css';
+import '../footer.css';
 
 const Footer = () => {
   return (
